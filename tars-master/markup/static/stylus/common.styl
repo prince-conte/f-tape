@@ -21,7 +21,7 @@ body
 section,
 header,
 nav
-    float-w(100%)
+    clearfix()
     
 a
     cursor pointer
@@ -47,7 +47,6 @@ ul
     
 
 .content-wrap
-    float-w(100%)
     
     
     
@@ -59,3 +58,65 @@ ul
 .page__buffer
     height 50px
     float-w(100%)
+    
+    
+    
+    
+    
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 
+    display block
+    text-align center
+    font-weight 700
+    color coltxt
+    text-align center
+    
+h1 
+    font-size 28px
+    margin 20px 0
+    
+h2
+    font-size 24px
+    
+.italic
+    font-style italic
+    
+
+.hov-r
+    position absolute
+    display block
+    width 100%
+    height 100%
+    top 0px
+    left 0px
+    z-index: 9999;
+
+.hov-r::after
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 10;
+    transition: all .2s ease-in-out;
+    top: -29px;
+    right: -29px;
+    bottom: -29px;
+    left: -29px;
+    pointer-events: none;
+    border: 28px solid colfirm;
+
+.hov-r:hover:after
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+        
+    
+    
+    
+    

@@ -1,5 +1,10 @@
 mixin video-block(data)
     a.video-block#baner
-        video.video-block_body-video#baner-v1(poster="img/homeg.jpg" playsinline autoplay muted loop )
+        video.video-block_body-video#baner-video(poster="img/homeg.jpg" playsinline autoplay muted loop )
             source(src="http://u-wdfl.ru/video/shanel.mp4" type="video/mp4")
         .hov-r(onmouseover="document.getElementById('baner-v1').muted=false")
+        .video-block__video-info
+            .middle 
+                .video-block_description Vogue Collection
+                h2 Chanel Spring-Summer 2017
+            
