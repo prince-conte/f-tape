@@ -5,6 +5,7 @@ html(class="no-js", lang="ru")
     include ../components/header/header
     include ../components/full-menu/full-menu
     include ../components/center-slider/center-slider
+    include ../components/video-block/video-block
     include ../components/example/example
     include ../components/footer/footer
     
@@ -19,6 +20,9 @@ html(class="no-js", lang="ru")
             +header()
             +full-menu()
             +center-slider()
+            .content-wrap
+                .content
+                    +video-block()
 
             //- Include your components here
             //- +example()
