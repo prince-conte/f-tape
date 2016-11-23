@@ -2,4 +2,32 @@
     float-w(100%)
     display block
     height 70px
-    background coltxt
+    background coltxt +5%
+    
+    &__burger
+        float left
+        width 70px
+        height 70px
+        background coltxt - 20%
+        m-speed(.3s)
+        position relative
+        &:hover
+            background coltxt + 10%
+            
+        span
+            abs(block,70%,5px,21px,15%)
+            background #fff
+            
+            &:before
+                content ''
+                abs(block,100%,5px,12px,0%)
+                background #fff
+                    
+            &:after
+                content ''
+                abs(block,100%,5px,24px,0%)
+                background #fff
+        
+            
+        
+        
